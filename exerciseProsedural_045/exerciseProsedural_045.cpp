@@ -51,3 +51,10 @@ void hitungJumlahDiterima() {
     cout << "Jumlah kandidat diterima: " << jumlahDiterima << endl;
     cout << "Jumlah kandidat tidak diterima: " << jumlahDitolak << endl;
 }
+
+int main() {
+    inputData();
+    tampilkanData();
+    hitungJumlahDiterima();
+    return 0;
+}
