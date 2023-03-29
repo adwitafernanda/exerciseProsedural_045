@@ -36,3 +36,18 @@ void tampilkanData() {
         cout << endl;
     }
 }
+
+void hitungJumlahDiterima() {
+    int jumlahDiterima = 0;
+    int jumlahDitolak = 0;
+    for (int i = 0; i < Kandidat; i++) {
+        if (isDiterima(i)) {
+            jumlahDiterima++;
+        }
+        else {
+            jumlahDitolak++;
+        }
+    }
+    cout << "Jumlah kandidat diterima: " << jumlahDiterima << endl;
+    cout << "Jumlah kandidat tidak diterima: " << jumlahDitolak << endl;
+}
