@@ -19,3 +19,20 @@ void inputData() {
     }
 }
 
+bool isDiterima(int index) {
+    return (nilaiMatematika[index] > 80 || (nilaiMatematika[index] + nilaiBahasaInggris[index]) / 2 >= 70);
+}
+
+void tampilkanData() {
+    cout << "Nama\t\tStatus" << endl;
+    for (int i = 0; i < Kandidat; i++) {
+        cout << nama[i] << "\t\t";
+        if (isDiterima(i)) {
+            cout << "Diterima";
+        }
+        else {
+            cout << "Ditolak";
+        }
+        cout << endl;
+    }
+}
