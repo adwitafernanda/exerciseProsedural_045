@@ -18,3 +18,4 @@ void inputData() {
         cin.ignore();
     }
 }
+
